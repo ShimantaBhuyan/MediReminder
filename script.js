@@ -113,12 +113,12 @@
         {
             "person": "TEST",
             "name": "TEST MED",
-            "time": "2:10:00"
+            "time": "2:13:00"
         },
         {
             "person": "DEUTA",
             "name": "BECADEXAMIN",
-            "time": "2:10:50"
+            "time": "2:13:50"
         },
     ];
 
@@ -157,10 +157,11 @@
         const sec = 5; // parseInt(seconds.value, 10);
         const registration = await navigator.serviceWorker.getRegistration();
         medsList.map((med) => {
+            console.log(med);
             registration.showNotification(`${med.person} MEDICINE: ${med.name}`, {
                 tag: Math.random().toString().substr(2),
                 body: `MEDICINE REMINDER`,
-                showTrigger: new TimestampTrigger(med.time),
+                showTrigger: new TimestampTrigger(DateTime.fromFormat(med.time, 'H:mm:ss', { zone: 'system'}).toMillis()),
                 icon: icon
               });
         })
