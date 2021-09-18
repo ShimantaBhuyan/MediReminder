@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Notification Triggers Demo</title>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    //   if (location.protocol === 'http:') {
+    //     location.protocol = 'https:';
+    //   }
+    </script>
+    <link rel="stylesheet" href="/style.css">  
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>      
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Reminder</h1>
+    <form>
+      <label>
+        Schedule a notification
+        <input type="text" pattern="\d+" value="20" minlength="1" maxlength="3">
+        seconds from now.
+      </label>
+      <input type="submit" value="Schedule Notification">
+    </form>
+    <!-- <h2>List all scheduled notifications</h2> 
+    <form>
+      <input type="submit" value="List Scheduled Notifications">
+      (<s>Striked</s> means the notification was shown already, but isn't closed yet.)
+    </form>
+    <table>
+      <thead>
+        <th>Tag</th>
+        <th>Title</th>
+        <th>Scheduled</th>
+        <th>Trigger</th>
+        <th>Cancel</th>
+      </thead>
+      <tbody></tbody>
+    </table> -->
+  </body>
+</html>
