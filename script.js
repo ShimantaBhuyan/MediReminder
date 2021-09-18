@@ -113,12 +113,12 @@
         {
             "person": "TEST",
             "name": "TEST MED",
-            "time": "2:21:00"
+            "time": "2:44:00"
         },
         {
             "person": "DEUTA",
             "name": "BECADEXAMIN",
-            "time": "2:21:50"
+            "time": "2:44:50"
         },
     ];
 
@@ -130,6 +130,10 @@
     if (!('serviceWorker' in navigator)) {
         return alert('You need a browser that supports service workers for this demo to work.');
     }  
+    if ('showTrigger' in Notification.prototype) {
+        alert('NOTIFICATION PROTOTYPE PRESENT');
+    }
+    
     if (!('showTrigger' in Notification.prototype)) {
       return alert('You need a browser with Notification Triggers support for this demo to work.');
     }
