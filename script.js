@@ -113,12 +113,12 @@
         {
             "person": "TEST",
             "name": "TEST MED",
-            "time": "3:05:00"
+            "time": "10:58:00"
         },
         {
             "person": "DEUTA",
             "name": "BECADEXAMIN",
-            "time": "3:05:50"
+            "time": "10:58:50"
         },
     ];
 
