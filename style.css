@@ -1,0 +1,13 @@
+html, body {
+    background-color: #f0f0f0;
+    color: #451d4b;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

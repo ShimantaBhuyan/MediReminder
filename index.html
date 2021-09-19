@@ -9,12 +9,16 @@
     //     location.protocol = 'https:';
     //   }
     </script>
-    <link rel="stylesheet" href="/style.css">  
+    <link rel="stylesheet" href="style.css">  
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>      
     <script src="script.js" defer></script>
   </head>  
   <body>
-    <h1>Reminder</h1>
+    <div id="mainDiv">
+        <h1>Medicine Reminder</h1>
+        <div id="medList"></div>
+    </div>
+    <!-- <h1>Reminder</h1>
     <form>
       <label>
         Schedule a notification
@@ -22,7 +26,7 @@
         seconds from now.
       </label>
       <input type="submit" value="Schedule Notification">
-    </form>
+    </form> -->
     <!-- <h2>List all scheduled notifications</h2> 
     <form>
       <input type="submit" value="List Scheduled Notifications">

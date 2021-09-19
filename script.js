@@ -110,17 +110,113 @@
 
 (async (icon) => {
     const medsList = [
-        {
-            "person": "TEST",
-            "name": "TEST MED",
-            "time": "10:58:00"
-        },
-        {
-            "person": "DEUTA",
-            "name": "BECADEXAMIN",
-            "time": "10:58:50"
-        },
-    ];
+    {
+        "person": "MA",
+        "name": "PANTOCID",
+        "time": "8:00:00"
+    },
+    {
+        "person": "MA",
+        "name": "AZMARDA",
+        "time": "11:00:00"
+    },
+    {
+        "person": "MA",
+        "name": "AZMARDA",
+        "time": "19:30:00"
+    },
+    {
+        "person": "MA",
+        "name": "REMETOR",
+        "time": "22:00:00"
+    },
+    {
+        "person": "MA",
+        "name": "CARDIVAS",
+        "time": "10:45:00"
+    },
+    {
+        "person": "MA",
+        "name": "CARDIVAS",
+        "time": "19:15:00"
+    },
+    {
+        "person": "MA",
+        "name": "EPTUS",
+        "time": "9:30:00"
+    },
+    {
+        "person": "MA",
+        "name": "INAPURE",
+        "time": "13:00:00"
+    },
+    {
+        "person": "MA",
+        "name": "MONOTRATE",
+        "time": "18:00:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "PAN-40",
+        "time": "8:00:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "ROSUVAS",
+        "time": "22:00:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "MEBEVERINE",
+        "time": "11:00:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "MEBEVERINE",
+        "time": "19:00:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "TORPLAT-A",
+        "time": "9:00:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "TORPLAT-A",
+        "time": "21:00:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "NATRILIX-SR",
+        "time": "9:30:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "PRAZOPRES-XL",
+        "time": "13:00:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "STANLIP",
+        "time": "20:30:00"
+    },
+    {
+        "person": "DEUTA",
+        "name": "BECADEXAMIN",
+        "time": "21:30:00"
+    },
+]
+
+    var medListDiv = document.getElementById("medList");
+    medsList.map(med => {
+        medListDiv.append(
+            `<div class="med-list-item">
+                <div class="med-list-person">${med.person}</div>
+                <div class="med-list-item-name">${med.name}</div>
+                <div class="med-list-item-time">${med.time}</div>
+            </div>`
+        );
+    })
 
     var DateTime = luxon.DateTime;
 

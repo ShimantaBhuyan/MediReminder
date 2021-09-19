@@ -9,8 +9,8 @@ var myFunction = function(){
     var minute = date.split(" ")[0].split(":")[1];
     // console.log(hour+" "+minute);
     var timeOfDay = date.split(" ")[1];
-    if(hour === "10" /* && timeOfDay === "pm" */) {
-        counter = 86400000;
+    if(hour === "11" /* && timeOfDay === "pm" */) {
+        counter = 300; //86400000;
         postMessage("COUNTER RESTARTED");
     }    
     interval = setInterval(myFunction, counter);
