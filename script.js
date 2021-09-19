@@ -209,13 +209,12 @@
 
     var medListDiv = document.getElementById("medList");
     medsList.map(med => {
-        medListDiv.append(
+        medListDiv.innerHTML = medListDiv.innerHTML +
             `<div class="med-list-item">
                 <div class="med-list-person">${med.person}</div>
                 <div class="med-list-item-name">${med.name}</div>
                 <div class="med-list-item-time">${med.time}</div>
             </div>`
-        );
     })
 
     var DateTime = luxon.DateTime;
