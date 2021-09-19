@@ -258,6 +258,7 @@
         const registration = await navigator.serviceWorker.getRegistration();
         medsList.map((med) => {
             console.log(med);
+            console.log(DateTime.fromFormat(med.time, 'H:mm:ss', { zone: 'system'}).toMillis());
             registration.showNotification(`${med.person} MEDICINE: ${med.name}`, {
                 tag: Math.random().toString().substr(2),
                 body: `MEDICINE REMINDER`,

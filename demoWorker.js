@@ -9,7 +9,7 @@ var myFunction = function(){
     var minute = date.split(" ")[0].split(":")[1];
     // console.log(hour+" "+minute);
     var timeOfDay = date.split(" ")[1];
-    if(hour === "11" /* && timeOfDay === "pm" */) {
+    if(hour === "12" && timeOfDay === "am") {
         counter = 300000; //86400000;
         postMessage("COUNTER RESTARTED");
     }    
