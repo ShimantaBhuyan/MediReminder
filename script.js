@@ -225,11 +225,7 @@
 
     if (!('serviceWorker' in navigator)) {
         return alert('You need a browser that supports service workers for this demo to work.');
-    }  
-    if ('showTrigger' in Notification.prototype) {
-        alert('NOTIFICATION PROTOTYPE PRESENT');
-    }
-    
+    }      
     if (!('showTrigger' in Notification.prototype)) {
       return alert('You need a browser with Notification Triggers support for this demo to work.');
     }
